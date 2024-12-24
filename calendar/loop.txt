@@ -1,0 +1,14 @@
+print a calendar form in the console
+
+calendar  = Calendar()
+calendarList = calendar.itermonthdays2(2007, 5)
+for i in calendarList:
+    # print(str(i[0]).zfill(2) if i[0] else "  ", end=' ')
+    # if i[1] == 6: print()
+    if i[0] != 0:
+        print(str(i[0]).zfill(2), end=' ')
+    else:
+        print("  ", end=' ')
+    if i[1]==6:
+        print()
+
